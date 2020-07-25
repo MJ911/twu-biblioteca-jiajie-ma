@@ -54,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
+  <component name="RunManager" selected="JUnit.ConsoleTest">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca" />
@@ -133,9 +133,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.ConsoleTest" />
         <item itemvalue="JUnit.ConsoleTest.should_print_welcome_message_when_console_is_start (1)" />
+        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.ConsoleTest.shoule_view_the_list_of_all_menu_options" />
         <item itemvalue="JUnit.ConsoleTest.should_view_the_list_of_all_library_books" />
       </list>
@@ -175,22 +175,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="375" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595584644854" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1595702661610">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1595703770879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595702661610" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1595702661610">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595703770879" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1595703770879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595702661610" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1595702661610">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595703770879" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1595703770879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595702661610" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1595702661610">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595703770879" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1595703770879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595702661610" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595703770879" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1595702284411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

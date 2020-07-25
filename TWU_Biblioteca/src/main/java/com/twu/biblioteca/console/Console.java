@@ -50,8 +50,9 @@ public class Console {
             String optionNo = inputWithInfo("Please Choose the OptionNo and Input it:");
             if(Integer.parseInt(optionNo) == 1) {
                 listBooks();
-            } else {
                 break;
+            } else {
+                printer.println("Please select a valid option!");
             }
         }
     }
