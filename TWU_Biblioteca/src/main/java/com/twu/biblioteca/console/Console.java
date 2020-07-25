@@ -48,12 +48,14 @@ public class Console {
     public void runOption(){
         while(true) {
             String optionNo = inputWithInfo("Please Choose the OptionNo and Input it:");
+            if("Q".equals(optionNo)) {
+                printer.println("Thanks your usage!");
+                break;
+            }
             if(Integer.parseInt(optionNo) == 1) {
                 listBooks();
-                break;
-            } else {
-                printer.println("Please select a valid option!");
             }
+            printer.println("Please select a valid option!");
         }
     }
 

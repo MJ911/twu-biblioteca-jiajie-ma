@@ -9,6 +9,8 @@ import java.util.List;
 public final class BibliotecaUtil {
 
     public static List<Option> getAllOptions() {
-        return Arrays.asList(new Option("1", "List of Books"));
+        return Arrays.asList(
+                new Option("1", "List of Books"),
+                new Option("Q", "exit the Application"));
     }
 }
