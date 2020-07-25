@@ -6,6 +6,13 @@ public class Book {
     private int publishYear;
     private boolean isIn;
 
+    public Book(String bookNo, String author, int publishYear, boolean isIn) {
+        this.bookNo = bookNo;
+        this.author = author;
+        this.publishYear = publishYear;
+        this.isIn = isIn;
+    }
+
     public String getBookNo() {
         return bookNo;
     }
