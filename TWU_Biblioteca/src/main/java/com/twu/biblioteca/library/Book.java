@@ -34,4 +34,10 @@ public class Book {
     public void setPublishYear(int publishYear) {
         this.publishYear = publishYear;
     }
+
+    @Override
+    public String toString() {
+        final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
+        return String.format(ENTRY_FORMAT, getBookNo(), getAuthor(), getPublishYear());
+    }
 }
