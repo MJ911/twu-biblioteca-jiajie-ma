@@ -6,7 +6,8 @@ import com.twu.biblioteca.library.TestLibrary;
 import java.util.Arrays;
 
 public final class DataProvidedApp {
-    private DataProvidedApp(){}
+    private DataProvidedApp() {
+    }
 
     public static TestLibrary provideBookLibrary() {
         return new TestLibrary(Arrays.asList(

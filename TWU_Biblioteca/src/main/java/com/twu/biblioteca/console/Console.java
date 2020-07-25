@@ -1,5 +1,6 @@
 package com.twu.biblioteca.console;
 
+import com.twu.biblioteca.BibliotecaUtil;
 import com.twu.biblioteca.library.Library;
 
 import java.io.PrintStream;
@@ -7,6 +8,7 @@ import java.io.PrintStream;
 public class Console {
     private final PrintStream printer = System.out;
     private Library libraryBooks;
+    private Menu bibliotecaMenu;
 
     public Console(Library libraryBooks) {
         this.libraryBooks = libraryBooks;
@@ -14,7 +16,7 @@ public class Console {
 
     public void start() {
         this.welcome();
-        listBooks();
+        this.listBooks();
     }
 
     public void welcome() {
@@ -25,7 +27,14 @@ public class Console {
         final String ENTRY_FORMAT = "%-16s | %16s\n";
         printer.println("Listing all the books message in Biblioteca:");
         printer.printf(ENTRY_FORMAT, "-AUTHOR-", "-PUBLISH YEAR-");
-        libraryBooks.getAllBooks().forEach(book -> System.out.printf(ENTRY_FORMAT, book.getAuthor(), book.getPublishYear()));
+        libraryBooks.getAllBooks().forEach(book -> printer.printf(ENTRY_FORMAT, book.getAuthor(), book.getPublishYear()));
+    }
+
+    public void main() {
+        bibliotecaMenu = new Menu(BibliotecaUtil.getAllOptions());
+        while (true) {
+
+        }
     }
 
 }
