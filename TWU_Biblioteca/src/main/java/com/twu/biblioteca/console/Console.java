@@ -1,9 +1,11 @@
 package com.twu.biblioteca.console;
 
 import com.twu.biblioteca.BibliotecaUtil;
+import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Library;
 
 import java.io.PrintStream;
+import java.util.Optional;
 import java.util.Scanner;
 
 public class Console {
@@ -29,7 +31,21 @@ public class Console {
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
         printer.println("Listing all the books message in Biblioteca:");
         printer.printf(ENTRY_FORMAT, "-BookNo-","-AUTHOR-", "-PUBLISH YEAR-");
-        libraryBooks.getAllBooks().forEach(book -> printer.printf(ENTRY_FORMAT, book.getBookNo(),book.getAuthor(), book.getPublishYear()));
+        libraryBooks.getAllBooks().stream().filter(Book::isIn).forEach(book -> printer.printf(ENTRY_FORMAT, book.getBookNo(),book.getAuthor(), book.getPublishYear()));
+    }
+
+
+    public void checkBook() {
+        String bookNo = inputWithInfo("Please Choose the BookNo and Input it:");
+        Optional<Book> checkBook = libraryBooks.getBookInfoByBookNo(bookNo);
+        final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
+        if(checkBook.isPresent()) {
+            printer.println("you check the book:");
+            printer.printf(ENTRY_FORMAT, "-BookNo-","-AUTHOR-", "-PUBLISH YEAR-");
+            printer.println(checkBook.get().toString());
+        } else {
+            printer.println("Your Book is not in the Biblioteca,Please select a valid BookNo!");
+        }
     }
 
     public void main() {
@@ -54,6 +70,8 @@ public class Console {
             }
             if(Integer.parseInt(optionNo) == 1) {
                 listBooks();
+                checkBook();
+                continue;
             }
             printer.println("Please select a valid option!");
         }
