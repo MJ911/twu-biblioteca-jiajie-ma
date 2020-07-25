@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="86000b8b-6bd4-4241-93e1-4969129374e1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/DataProvidedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/DataProvidedApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/console/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/console/Console.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/twu/biblioteca/consoleTest/ConsoleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/twu/biblioteca/consoleTest/ConsoleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/BibliotecaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/BibliotecaApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/auth/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/auth/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/console/Console.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/twu/biblioteca/ExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/twu/biblioteca/ExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/console/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/console/Console.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/twu/biblioteca/consoleTest/ConsoleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/twu/biblioteca/consoleTest/ConsoleTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,20 +52,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
-    <configuration name="BibliotecaApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.com.twu.biblioteca.BibliotecaApp" />
-      <module name="TWU_Biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.com.twu.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ConsoleTest">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca" />
@@ -132,13 +113,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ConsoleTest.should_view_the_list_of_all_library_books" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.consoleTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.consoleTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.consoleTest.ConsoleTest" />
+      <option name="METHOD_NAME" value="should_view_the_list_of_all_library_books" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.ConsoleTest.should_print_welcome_message_when_console_is_start (1)" />
         <item itemvalue="JUnit.ConsoleTest" />
+        <item itemvalue="JUnit.ConsoleTest.should_print_welcome_message_when_console_is_start (1)" />
+        <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.ConsoleTest.should_view_the_list_of_all_library_books" />
         <item itemvalue="JUnit.ConsoleTest.should_print_welcome_message_when_console_is_start" />
-        <item itemvalue="Application.BibliotecaApp (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -156,10 +153,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="554" y="278" key="#Project_Structure" timestamp="1595584083320">
+    <state x="554" y="278" key="#Project_Structure" timestamp="1595694097587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="554" y="278" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1595584083320" />
+    <state x="554" y="278" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1595694097587" />
     <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1595680199217">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -176,38 +173,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="375" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595584644854" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1595692817787">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1595694741893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595692817787" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1595692817786">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595694741893" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1595694741892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595692817786" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1595692817786">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595694741892" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1595694741892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595692817786" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1595692817787">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595694741892" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1595694741892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595692817787" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1595692251196">
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595694741892" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1595694141063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595692251196" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1595692251195">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595694141063" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1595694141063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595692251195" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1595692251195">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595694141063" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1595694141063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595692251195" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1595692251196">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595694141063" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1595694141063">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595692251196" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595694141063" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1595681161825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

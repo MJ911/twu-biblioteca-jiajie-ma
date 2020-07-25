@@ -11,12 +11,17 @@ public class ConsoleTest {
 
     @Before
     public void setUp() {
-        console = new Console(DataProvidedApp.provideBookLibrary());
+        console = spy(new Console(DataProvidedApp.provideBookLibrary()));
+        console.start();
     }
 
     @Test
     public void should_print_welcome_message_when_console_is_start(){
-        console.start();
         verify(console, times(1)).welcome();
+    }
+
+    @Test
+    public void should_view_the_list_of_all_library_books(){
+        verify(console, times(1)).listBooks();
     }
 }

@@ -21,7 +21,7 @@ public class Console {
         printer.println("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!");
     }
     public void listBooks() {
-        StringBuilder bookStringBuilder = new StringBuilder("");
+        StringBuilder bookStringBuilder = new StringBuilder();
         List<Book> books = libraryBooks.getAllBooks();
         books.stream().map(s -> bookStringBuilder.append("Author: ").append(s.getAuthor()).append(" publishYear: ").append(s.getPublishYear()).append("\n")).count();
         printer.println(bookStringBuilder.toString());
