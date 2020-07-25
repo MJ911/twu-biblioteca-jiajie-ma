@@ -1,10 +1,8 @@
 package com.twu.biblioteca.console;
 
-import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Library;
 
 import java.io.PrintStream;
-import java.util.List;
 
 public class Console {
     private final PrintStream printer = System.out;
@@ -13,13 +11,16 @@ public class Console {
     public Console(Library libraryBooks) {
         this.libraryBooks = libraryBooks;
     }
+
     public void start() {
         this.welcome();
         listBooks();
     }
+
     public void welcome() {
         printer.println("Welcome to Biblioteca. Your one-stop-shop for great book titles in Bangalore!");
     }
+
     public void listBooks() {
         final String ENTRY_FORMAT = "%-16s | %16s\n";
         printer.println("Listing all the books message in Biblioteca:");
