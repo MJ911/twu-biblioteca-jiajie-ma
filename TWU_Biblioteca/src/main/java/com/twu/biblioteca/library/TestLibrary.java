@@ -9,7 +9,13 @@ public final class TestLibrary implements Library {
         this.books = initBooks;
     }
 
+    @Override
     public List<Book> getAllBooks() {
         return books;
+    }
+
+    @Override
+    public Book getBookInfoByBookNo() {
+        return null;
     }
 }
