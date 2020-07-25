@@ -26,10 +26,10 @@ public class Console {
     }
 
     public void listBooks() {
-        final String ENTRY_FORMAT = "%-16s | %16s\n";
+        final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
         printer.println("Listing all the books message in Biblioteca:");
-        printer.printf(ENTRY_FORMAT, "-AUTHOR-", "-PUBLISH YEAR-");
-        libraryBooks.getAllBooks().forEach(book -> printer.printf(ENTRY_FORMAT, book.getAuthor(), book.getPublishYear()));
+        printer.printf(ENTRY_FORMAT, "-BookNo-","-AUTHOR-", "-PUBLISH YEAR-");
+        libraryBooks.getAllBooks().forEach(book -> printer.printf(ENTRY_FORMAT, book.getBookNo(),book.getAuthor(), book.getPublishYear()));
     }
 
     public void main() {

@@ -11,8 +11,8 @@ public final class DataProvidedApp {
 
     public static TestLibrary provideBookLibrary() {
         return new TestLibrary(Arrays.asList(
-                new Book("Dimtree", 1992),
-                new Book("Nick M", 2003),
-                new Book("Mint", 2005)));
+                new Book("1","Dimtree", 1992),
+                new Book("2","Nick M", 2003),
+                new Book("3","Mint", 2005)));
     }
 }
