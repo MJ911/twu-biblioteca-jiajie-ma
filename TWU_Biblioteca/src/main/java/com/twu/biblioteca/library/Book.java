@@ -4,12 +4,7 @@ public class Book {
     private String bookNo;
     private String author;
     private int publishYear;
-
-    public Book(String bookNo, String author, int publishYear) {
-        this.bookNo = bookNo;
-        this.author = author;
-        this.publishYear = publishYear;
-    }
+    private boolean isIn;
 
     public String getBookNo() {
         return bookNo;
@@ -33,6 +28,14 @@ public class Book {
 
     public void setPublishYear(int publishYear) {
         this.publishYear = publishYear;
+    }
+
+    public boolean isIn() {
+        return isIn;
+    }
+
+    public void setIn(boolean in) {
+        isIn = in;
     }
 
     @Override
