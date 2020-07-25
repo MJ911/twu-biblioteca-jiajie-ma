@@ -6,5 +6,5 @@ import java.util.Optional;
 public interface Library {
     List<Book> getAllBooks();
 
-    Optional<Book> getBookInfoByBookNo();
+    Optional<Book> getBookInfoByBookNo(String info);
 }
