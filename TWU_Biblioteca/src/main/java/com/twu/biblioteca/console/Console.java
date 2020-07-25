@@ -40,9 +40,7 @@ public class Console {
         Optional<Book> checkBook = libraryBooks.getBookInfoByBookNo(bookNo);
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
         if(checkBook.isPresent()) {
-            printer.println("you check the book:");
-            printer.printf(ENTRY_FORMAT, "-BookNo-","-AUTHOR-", "-PUBLISH YEAR-");
-            printer.println(checkBook.get().toString());
+            printer.println("Thank you!Enjoy the book");
         } else {
             printer.println("Your Book is not in the Biblioteca,Please select a valid BookNo!");
         }

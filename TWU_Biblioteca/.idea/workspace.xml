@@ -55,7 +55,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.ConsoleTest.should_view_the_book_is_in_Biblioteca_which_user_want">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca" />
@@ -69,7 +69,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConsoleTest.should_quit_the_application_when_user_input_Q_option" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConsoleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +79,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.consoleTest" />
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.consoleTest.ConsoleTest" />
-      <option name="METHOD_NAME" value="should_quit_the_application_when_user_input_Q_option" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleTest.should_print_welcome_message_when_console_is_start" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TWU_Biblioteca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.twu.biblioteca.consoleTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.consoleTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.consoleTest.ConsoleTest" />
+      <option name="METHOD_NAME" value="should_print_welcome_message_when_console_is_start" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,21 +112,6 @@
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.consoleTest.ConsoleTest" />
       <option name="METHOD_NAME" value="should_view_the_book_is_in_Biblioteca_which_user_want" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TWU_Biblioteca" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.libraryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.libraryTest" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.libraryTest.TestLibraryTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConsoleTest.should_view_the_book_is_in_Biblioteca_which_user_want" />
         <item itemvalue="Application.BibliotecaApp" />
+        <item itemvalue="JUnit.ConsoleTest.should_print_welcome_message_when_console_is_start" />
+        <item itemvalue="JUnit.ConsoleTest" />
+        <item itemvalue="JUnit.ConsoleTest.should_view_the_book_is_in_Biblioteca_which_user_want" />
         <item itemvalue="JUnit.TestLibraryTest.should_get_the_book_when_user_input_the_existing_book" />
-        <item itemvalue="JUnit.TestLibraryTest" />
-        <item itemvalue="JUnit.ConsoleTest.should_quit_the_application_when_user_input_Q_option" />
       </list>
     </recent_temporary>
   </component>
@@ -180,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="375" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595584644854" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1595712270397">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1595712517589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595712270397" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1595712270397">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595712517589" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1595712517589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595712270397" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1595712270397">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595712517589" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1595712517589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595712270397" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1595712270397">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595712517589" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1595712517589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595712270397" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595712517589" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1595702284411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
