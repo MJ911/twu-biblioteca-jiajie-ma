@@ -47,13 +47,17 @@ public class Console {
 
     public void runOption(){
         while(true) {
-            printer.println("Please Choosing the OptionNo and Input it:");
-            String optionNo = scanner.nextLine();
+            String optionNo = inputWithInfo("Please Choose the OptionNo and Input it:");
             if(Integer.parseInt(optionNo) == 1) {
                 listBooks();
             } else {
                 break;
             }
         }
+    }
+
+    public String inputWithInfo(String info) {
+        printer.println(info);
+        return scanner.nextLine();
     }
 }
