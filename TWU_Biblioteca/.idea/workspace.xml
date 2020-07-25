@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -16,13 +19,19 @@
     </option>
   </component>
   <component name="ProjectId" id="1f7z8ZgdXhqk2U0DWB8uroxG00s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../TWFiles/TWU_github_code/twu-biblioteca" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -84,6 +93,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="554" y="278" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1595584083320" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1595679477157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1595679477157" />
     <state x="741" y="478" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595584031622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -108,10 +121,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595584116531" />
-    <state x="642" y="444" key="com.intellij.ide.util.TipDialog" timestamp="1595584594048">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1595679335637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="642" y="444" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595584594048" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595679335637" />
+    <state x="642" y="444" key="com.intellij.ide.util.TipDialog" timestamp="1595679314375">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="642" y="444" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595679314375" />
+    <state x="658" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595679365086">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="658" y="413" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1595679365086" />
     <state x="638" y="219" width="647" height="801" key="find.popup" timestamp="1595583871219">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
