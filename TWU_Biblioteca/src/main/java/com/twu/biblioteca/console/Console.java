@@ -49,7 +49,7 @@ public class Console {
         while(true) {
             String optionNo = inputWithInfo("Please Choose the OptionNo and Input it:");
             if("Q".equals(optionNo)) {
-                printer.println("Thanks your usage!");
+                exit();
                 break;
             }
             if(Integer.parseInt(optionNo) == 1) {
@@ -62,5 +62,9 @@ public class Console {
     public String inputWithInfo(String info) {
         printer.println(info);
         return scanner.nextLine();
+    }
+
+    public void exit() {
+        printer.println("Thanks your usage!");
     }
 }
