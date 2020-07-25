@@ -42,7 +42,7 @@ public class Console {
         if(checkBook.isPresent()) {
             printer.println("Thank you!Enjoy the book");
         } else {
-            printer.println("Your Book is not in the Biblioteca,Please select a valid BookNo!");
+            printer.println("Sorry,that book is not available");
         }
     }
 
