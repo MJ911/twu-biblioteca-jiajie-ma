@@ -1,4 +1,4 @@
-package main.java.com.twu.biblioteca.auth;
+package com.twu.biblioteca.auth;
 
 public class User {
     private String userId;

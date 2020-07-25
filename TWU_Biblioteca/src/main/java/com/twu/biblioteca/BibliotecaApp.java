@@ -1,8 +1,11 @@
-package main.java.com.twu.biblioteca;
+package com.twu.biblioteca;
+
+import com.twu.biblioteca.console.Console;
 
 public class BibliotecaApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+        Console console = new Console();
+        console.start();
     }
 }
