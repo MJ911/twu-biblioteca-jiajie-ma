@@ -5,7 +5,7 @@ import com.twu.biblioteca.console.Console;
 public class BibliotecaApp {
 
     public static void main(String[] args) {
-        Console console = new Console();
+        Console console = new Console(DataProvidedApp.provideBookLibrary());
         console.start();
     }
 }

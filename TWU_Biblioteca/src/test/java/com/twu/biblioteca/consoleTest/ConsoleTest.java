@@ -1,5 +1,6 @@
 package com.twu.biblioteca.consoleTest;
 
+import com.twu.biblioteca.DataProvidedApp;
 import com.twu.biblioteca.console.Console;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ public class ConsoleTest {
 
     @Before
     public void setUp() {
-        console = spy(Console.class);
+        console = new Console(DataProvidedApp.provideBookLibrary());
     }
 
     @Test

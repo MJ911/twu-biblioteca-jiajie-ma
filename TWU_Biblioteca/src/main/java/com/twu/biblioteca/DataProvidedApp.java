@@ -8,7 +8,7 @@ import java.util.Arrays;
 public final class DataProvidedApp {
     private DataProvidedApp(){}
 
-    public TestLibrary provideBookLibrary() {
+    public static TestLibrary provideBookLibrary() {
         return new TestLibrary(Arrays.asList(
                 new Book("Dimtree", 1992),
                 new Book("Nick M", 2003),
