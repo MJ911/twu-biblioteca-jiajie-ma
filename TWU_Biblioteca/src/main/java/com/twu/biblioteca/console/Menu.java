@@ -9,7 +9,7 @@ public class Menu {
         this.menuItem = menuItem;
     }
 
-    public List<Option> getMenuItem() {
+    public List<Option> getMenuItems() {
         return menuItem;
     }
 }
