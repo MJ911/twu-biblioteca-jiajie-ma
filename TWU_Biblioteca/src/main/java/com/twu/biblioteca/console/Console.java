@@ -50,7 +50,7 @@ public class Console {
         String bookNo = inputWithInfo("Please Return the BookNo and Input it:");
         boolean isReturn = libraryBooks.returnBook(bookNo);
         if(isReturn) {
-            printer.println("Thanks for return the book!");
+            printer.println("Thank you for returning the book!");
             return;
         }
         printer.println("Please select a right bookNo!");
