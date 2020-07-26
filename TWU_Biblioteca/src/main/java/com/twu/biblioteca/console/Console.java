@@ -53,7 +53,7 @@ public class Console {
             printer.println("Thank you for returning the book!");
             return;
         }
-        printer.println("Please select a right bookNo!");
+        printer.println("That is not a valid book to return.");
     }
 
     public void main() {
