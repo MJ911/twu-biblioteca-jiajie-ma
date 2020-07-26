@@ -71,6 +71,10 @@ public class Console {
                 checkBook();
                 continue;
             }
+            if(Integer.parseInt(optionNo) == 2) {
+                //return a book
+                continue;
+            }
             printer.println("Please select a valid option!");
         }
     }

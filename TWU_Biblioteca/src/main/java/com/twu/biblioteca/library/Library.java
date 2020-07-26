@@ -7,4 +7,6 @@ public interface Library {
     List<Book> getAllBooks();
 
     Optional<Book> getBookInfoByBookNo(String info);
+
+    boolean returnBook(String info);
 }

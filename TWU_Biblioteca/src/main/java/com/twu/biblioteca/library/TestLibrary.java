@@ -23,4 +23,9 @@ public final class TestLibrary implements Library {
 
         return checkBook;
     }
+
+    @Override
+    public boolean returnBook(String info) {
+        return false;
+    }
 }
