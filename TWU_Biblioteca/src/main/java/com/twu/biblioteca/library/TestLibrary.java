@@ -25,7 +25,12 @@ public final class TestLibrary implements Library {
     }
 
     @Override
-    public boolean returnBook(String info) {
-        return false;
+    public boolean returnBook(String bookNo) {
+        Optional<Book> checkBook = books.stream().filter(book -> bookNo.equals(book.getBookNo())).findFirst();
+        if(!checkBook.isPresent() || checkBook.get().isIn()) {
+            return false;
+        }
+        checkBook.ifPresent(book -> book.setIn(true));
+        return true;
     }
 }
