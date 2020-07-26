@@ -46,6 +46,16 @@ public class Console {
         }
     }
 
+    public void returnBook() {
+        String bookNo = inputWithInfo("Please Return the BookNo and Input it:");
+        boolean isReturn = libraryBooks.returnBook(bookNo);
+        if(isReturn) {
+            printer.println("Thanks for return the book!");
+            return;
+        }
+        printer.println("Please select a right bookNo!");
+    }
+
     public void main() {
         this.listOptios();
         this.runOption();
@@ -72,7 +82,7 @@ public class Console {
                 continue;
             }
             if(Integer.parseInt(optionNo) == 2) {
-                //return a book
+                returnBook();
                 continue;
             }
             printer.println("Please select a valid option!");
