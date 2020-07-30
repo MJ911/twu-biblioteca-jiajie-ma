@@ -127,6 +127,10 @@ public class Console {
                 listUserInfo();
                 continue;
             }
+            if(Integer.parseInt(optionNo) == 6) {
+                viewOwnInfo();
+                continue;
+            }
             printer.println("Please select a valid option!");
         }
     }
@@ -161,6 +165,10 @@ public class Console {
         }
         printer.println("Listing all the checked out message in Biblioteca:");
         userInfos.getUserItemInfoMap().forEach((loginInfo, item) -> printer.println(loginInfo.toString()+item.toString()));
+    }
+
+    public void viewOwnInfo() {
+        
     }
 
 }
