@@ -1,11 +1,13 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.auth.User;
 import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Movie;
 import com.twu.biblioteca.library.TestLibraryBooks;
 import com.twu.biblioteca.library.TestLibraryMovies;
 
 import java.util.Arrays;
+import java.util.List;
 
 public final class DataProvidedApp {
     private DataProvidedApp() {
@@ -24,5 +26,10 @@ public final class DataProvidedApp {
                 new Movie("2","X MAN 2", 2004, "Eric & Nick", "9", true),
                 new Movie("3","X MAN 3", 2010, "Nick", "10", true)
         ));
+    }
+
+    public static List<User> provideUsers() {
+        return Arrays.asList(new User("123456", "123456"),
+                new User("123456789", "123456789"));
     }
 }

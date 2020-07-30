@@ -1,6 +1,7 @@
 package com.twu.biblioteca.console;
 
 import com.twu.biblioteca.BibliotecaUtil;
+import com.twu.biblioteca.DataProvidedApp;
 import com.twu.biblioteca.auth.Authenticator;
 import com.twu.biblioteca.auth.AuthenticatorTest;
 import com.twu.biblioteca.auth.ErrorValidationException;
@@ -25,7 +26,7 @@ public class Console {
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
         this.libraryMoviess = libraryMoviess;
-        authenticator = new AuthenticatorTest();
+        authenticator = new AuthenticatorTest(DataProvidedApp.provideUsers());
     }
 
     public void start() {
