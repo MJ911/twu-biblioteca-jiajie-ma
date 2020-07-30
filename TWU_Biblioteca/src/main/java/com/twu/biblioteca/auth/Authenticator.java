@@ -1,5 +1,5 @@
 package com.twu.biblioteca.auth;
 
 public interface Authenticator {
-    void authenticatorLogin(User user) throws ErrorValidationException;
+    void authenticatorLogin(LoginInfo loginInfo) throws ErrorValidationException;
 }

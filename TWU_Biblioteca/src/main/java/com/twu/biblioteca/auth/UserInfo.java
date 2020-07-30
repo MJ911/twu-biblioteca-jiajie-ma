@@ -6,17 +6,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class UserInfo {
-    private Map<User, Item> userItemInfoMap;
+    private Map<LoginInfo, Item> userItemInfoMap;
 
     public UserInfo() {
         this.userItemInfoMap = new HashMap<>();
     }
 
-    public Map<User, Item> getUserItemInfoMap() {
+    public Map<LoginInfo, Item> getUserItemInfoMap() {
         return userItemInfoMap;
     }
 
-    public void setUserItemInfoMap(Map<User, Item> userItemInfoMap) {
+    public void setUserItemInfoMap(Map<LoginInfo, Item> userItemInfoMap) {
         this.userItemInfoMap = userItemInfoMap;
     }
 }

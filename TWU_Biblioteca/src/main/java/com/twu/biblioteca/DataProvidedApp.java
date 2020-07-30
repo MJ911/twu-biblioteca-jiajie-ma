@@ -1,5 +1,6 @@
 package com.twu.biblioteca;
 
+import com.twu.biblioteca.auth.LoginInfo;
 import com.twu.biblioteca.auth.User;
 import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Movie;
@@ -28,10 +29,10 @@ public final class DataProvidedApp {
         ));
     }
 
-    public static List<User> provideUsers() {
+    public static List<LoginInfo> provideUsers() {
         return Arrays.asList(
-                new User("123456", "123456"),
-                new User("123456789", "123456789"),
-                new User("admin", "123456"));
+                new LoginInfo("123456", "123456"),
+                new LoginInfo("123456789", "123456789"),
+                new LoginInfo("admin", "123456"));
     }
 }

@@ -18,7 +18,7 @@ public class Console {
     private Library<Book> libraryBooks;
     private Library<Movie> libraryMovies;
     private Authenticator authenticator;
-    private User user;
+    private LoginInfo loginInfo;
     private UserInfo userInfo;
 
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
@@ -51,7 +51,7 @@ public class Console {
         Optional<Book> checkBook = libraryBooks.getItemInfoByItemNo(bookNo);
         if(checkBook.isPresent()) {
             printer.println("Thank you!Enjoy the book");
-            userInfo.getUserItemInfoMap().put(user, checkBook.get());
+            userInfo.getUserItemInfoMap().put(loginInfo, checkBook.get());
         } else {
             printer.println("Sorry,that book is not available");
         }
@@ -80,7 +80,7 @@ public class Console {
         Optional<Movie> checkMovie = libraryMovies.getItemInfoByItemNo(movieNo);
         if(checkMovie.isPresent()) {
             printer.println("Thank you!Enjoy the movie");
-            userInfo.getUserItemInfoMap().put(user, checkMovie.get());
+            userInfo.getUserItemInfoMap().put(loginInfo, checkMovie.get());
         } else {
             printer.println("Sorry,that movie is not available");
         }
@@ -145,8 +145,8 @@ public class Console {
             try {
                 String userNo = inputWithInfo("Please input your card ID:");
                 String userPassword = inputWithInfo("Please input your card PASSWORD:");
-                user = new User(userNo, userPassword);
-                authenticator.authenticatorLogin(user);
+                loginInfo = new LoginInfo(userNo, userPassword);
+                authenticator.authenticatorLogin(loginInfo);
                 break;
             } catch (ErrorValidationException e) {
                 printer.println("Please input the correct ID or PASSWORD!");
@@ -155,12 +155,12 @@ public class Console {
     }
 
     public void listUserInfo() {
-        if(!user.getUserId().equals("admin")) {
+        if(!loginInfo.getUserId().equals("admin")) {
             printer.println("You dont have the jurisdiction to use this option, Choose other one!");
             return;
         }
         printer.println("Listing all the checked out message in Biblioteca:");
-        userInfo.getUserItemInfoMap().forEach((user, item) -> printer.println(user.toString()+item.toString()));
+        userInfo.getUserItemInfoMap().forEach((loginInfo, item) -> printer.println(loginInfo.toString()+item.toString()));
     }
 
 }
