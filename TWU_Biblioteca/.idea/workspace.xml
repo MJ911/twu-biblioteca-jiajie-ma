@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86000b8b-6bd4-4241-93e1-4969129374e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/Authenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/AuthenticatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/TestAuthenticator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/console/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/console/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/console/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/console/Console.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
+  <component name="RunManager" selected="JUnit.TestAuthenticatorTest.should_get_the_user_info_from_the_loginInfo">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca" />
@@ -64,32 +68,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLibraryBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAuthenticatorTest.should_get_the_user_info_from_the_loginInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.libraryTest.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.authTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.libraryTest" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.libraryTest.TestLibraryBooksTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.authTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.authTest.TestAuthenticatorTest" />
+      <option name="METHOD_NAME" value="should_get_the_user_info_from_the_loginInfo" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLibraryBooksTest.should_return_the_book_when_the_book_is_exist_and_is_not_in_library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAuthenticatorTest.should_throw_the_ErrorValidationException_when_not_check_the_LoginInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.biblioteca.libraryTest.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.authTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.twu.biblioteca.libraryTest" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.libraryTest.TestLibraryBooksTest" />
-      <option name="METHOD_NAME" value="should_return_the_book_when_the_book_is_exist_and_is_not_in_library" />
+      <option name="PACKAGE_NAME" value="com.twu.biblioteca.authTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.authTest.TestAuthenticatorTest" />
+      <option name="METHOD_NAME" value="should_throw_the_ErrorValidationException_when_not_check_the_LoginInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestAuthenticatorTest.should_get_the_user_info_from_the_loginInfo" />
+        <item itemvalue="JUnit.TestAuthenticatorTest.should_throw_the_ErrorValidationException_when_not_check_the_LoginInfo" />
         <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.TestLibraryMoviesTest" />
         <item itemvalue="JUnit.TestLibraryMoviesTest.should_get_the_movie_when_user_input_the_existing_movie" />
-        <item itemvalue="JUnit.TestLibraryBooksTest" />
-        <item itemvalue="JUnit.TestLibraryBooksTest.should_return_the_book_when_the_book_is_exist_and_is_not_in_library" />
       </list>
     </recent_temporary>
   </component>
@@ -154,18 +159,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="554" y="278" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1595694097587" />
-    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1595696963524">
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596141893090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595696963524" />
+    <state x="690" y="275" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596141893090" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595710823752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595710823752" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1596140431301">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1596141587429">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596140431301" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596141587429" />
     <state x="741" y="478" width="441" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595584031622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -178,22 +183,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="375" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595584644854" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1596141349693">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1596142844451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596141349693" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1596141349693">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1596142844451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596141349693" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1596141349693">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1596142844451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596141349693" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1596141349693">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1596142844451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596141349693" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1595755450541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

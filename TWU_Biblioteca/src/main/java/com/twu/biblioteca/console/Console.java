@@ -24,7 +24,7 @@ public class Console {
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
         this.libraryMovies = libraryMoviess;
-        this.authenticator = new AuthenticatorTest(DataProvidedApp.provideUsers());
+        this.authenticator = new TestAuthenticator(DataProvidedApp.provideUsers());
         this.userInfos = new UserInfo();
     }
 
@@ -168,7 +168,7 @@ public class Console {
     }
 
     public void viewOwnInfo() {
-        
+
     }
 
 }
