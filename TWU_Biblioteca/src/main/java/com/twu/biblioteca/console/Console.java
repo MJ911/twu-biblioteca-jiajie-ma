@@ -9,7 +9,6 @@ import com.twu.biblioteca.library.Movie;
 import com.twu.biblioteca.library.Item;
 
 import java.io.PrintStream;
-import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -20,12 +19,13 @@ public class Console {
     private Library<Movie> libraryMovies;
     private Authenticator authenticator;
     private User user;
-    private List<UserInfo> userInfos;
+    private UserInfo userInfo;
 
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
         this.libraryMovies = libraryMoviess;
-        authenticator = new AuthenticatorTest(DataProvidedApp.provideUsers());
+        this.authenticator = new AuthenticatorTest(DataProvidedApp.provideUsers());
+        this.userInfo = new UserInfo();
     }
 
     public void start() {
@@ -51,6 +51,7 @@ public class Console {
         Optional<Book> checkBook = libraryBooks.getItemInfoByItemNo(bookNo);
         if(checkBook.isPresent()) {
             printer.println("Thank you!Enjoy the book");
+            userInfo.getUserItemInfoMap().put(user, checkBook.get());
         } else {
             printer.println("Sorry,that book is not available");
         }
@@ -79,6 +80,7 @@ public class Console {
         Optional<Movie> checkMovie = libraryMovies.getItemInfoByItemNo(movieNo);
         if(checkMovie.isPresent()) {
             printer.println("Thank you!Enjoy the movie");
+            userInfo.getUserItemInfoMap().put(user, checkMovie.get());
         } else {
             printer.println("Sorry,that movie is not available");
         }
