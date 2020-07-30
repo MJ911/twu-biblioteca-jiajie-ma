@@ -56,6 +56,10 @@ public class Console {
         printer.println("That is not a valid book to return.");
     }
 
+    public void listMovies() {
+
+    }
+
     public void main() {
         this.listOptios();
         this.runOption();
@@ -83,6 +87,10 @@ public class Console {
             }
             if(Integer.parseInt(optionNo) == 2) {
                 returnBook();
+                continue;
+            }
+            if(Integer.parseInt(optionNo) == 3) {
+                listMovies();
                 continue;
             }
             printer.println("Please select a valid option!");
