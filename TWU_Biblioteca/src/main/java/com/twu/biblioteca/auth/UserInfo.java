@@ -2,28 +2,20 @@ package com.twu.biblioteca.auth;
 
 import com.twu.biblioteca.library.Item;
 
+import java.util.Map;
+
 public class UserInfo {
-    private User user;
-    private Item item;
+    private Map<User, Item> userItemInfoMap;
 
-    public UserInfo(User user, Item item) {
-        this.user = user;
-        this.item = item;
+    public UserInfo(Map<User, Item> userItemInfoMap) {
+        this.userItemInfoMap = userItemInfoMap;
     }
 
-    public User getUser() {
-        return user;
+    public Map<User, Item> getUserItemInfoMap() {
+        return userItemInfoMap;
     }
 
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Item getItem() {
-        return item;
-    }
-
-    public void setItem(Item item) {
-        this.item = item;
+    public void setUserItemInfoMap(Map<User, Item> userItemInfoMap) {
+        this.userItemInfoMap = userItemInfoMap;
     }
 }

@@ -2,16 +2,14 @@ package com.twu.biblioteca.console;
 
 import com.twu.biblioteca.BibliotecaUtil;
 import com.twu.biblioteca.DataProvidedApp;
-import com.twu.biblioteca.auth.Authenticator;
-import com.twu.biblioteca.auth.AuthenticatorTest;
-import com.twu.biblioteca.auth.ErrorValidationException;
-import com.twu.biblioteca.auth.User;
+import com.twu.biblioteca.auth.*;
 import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Library;
 import com.twu.biblioteca.library.Movie;
 import com.twu.biblioteca.library.Item;
 
 import java.io.PrintStream;
+import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -22,6 +20,7 @@ public class Console {
     private Library<Movie> libraryMovies;
     private Authenticator authenticator;
     private User user;
+    private List<UserInfo> userInfos;
 
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
