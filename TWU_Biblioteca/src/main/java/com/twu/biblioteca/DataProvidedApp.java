@@ -29,7 +29,9 @@ public final class DataProvidedApp {
     }
 
     public static List<User> provideUsers() {
-        return Arrays.asList(new User("123456", "123456"),
-                new User("123456789", "123456789"));
+        return Arrays.asList(
+                new User("123456", "123456"),
+                new User("123456789", "123456789"),
+                new User("admin", "123456"));
     }
 }

@@ -123,6 +123,10 @@ public class Console {
                 checkMovie();
                 continue;
             }
+            if(Integer.parseInt(optionNo) == 5) {
+                listUserInfo();
+                continue;
+            }
             printer.println("Please select a valid option!");
         }
     }
@@ -148,6 +152,15 @@ public class Console {
                 printer.println("Please input the correct ID or PASSWORD!");
             }
         }
+    }
+
+    public void listUserInfo() {
+        if(!user.getUserId().equals("admin")) {
+            printer.println("You dont have the jurisdiction to use this option, Choose other one!");
+            return;
+        }
+        printer.println("Listing all the checked out message in Biblioteca:");
+        userInfo.getUserItemInfoMap().forEach((user, item) -> printer.println(user.toString()+item.toString()));
     }
 
 }

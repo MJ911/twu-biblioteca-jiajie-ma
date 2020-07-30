@@ -40,4 +40,11 @@ public class User {
     public int hashCode() {
         return Objects.hash(getUserId(), getUserPassword());
     }
+
+    @Override
+    public String toString() {
+        final String ENTRY_FORMAT = "%-20s | %-20s\n";
+        return String.format(ENTRY_FORMAT, getUserId(), getUserPassword());
+
+    }
 }

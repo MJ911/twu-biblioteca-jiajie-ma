@@ -45,4 +45,10 @@ public class Movie extends Item {
     public void setMovieRating(String movieRating) {
         this.movieRating = movieRating;
     }
+
+    @Override
+    public String toString() {
+        final String ENTRY_FORMAT = "%-16s | %-20s | %-20s |  %-20s | %-20s\n";
+        return String.format(ENTRY_FORMAT, getItemNo(), getMovieName(), getMovieReleaseYear(), getMovieDirector(), getMovieRating());
+    }
 }
