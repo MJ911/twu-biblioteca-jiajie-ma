@@ -168,7 +168,11 @@ public class Console {
     }
 
     public void viewOwnInfo() {
-
+        User ownUser = authenticator.getUserInfoByLoginInfo(loginInfo);
+        final String ENTRY_FORMAT = "%-16s | %-20s | %-20s |  %-30s | %-20s\n";
+        printer.println("The following info is your own info:");
+        printer.printf(ENTRY_FORMAT, "-userId-", "-userPassword-", "-userName-", "-userEmail-", "-userPhone-");
+        printer.printf(ENTRY_FORMAT, ownUser.getUserId(), ownUser.getUserPassword(), ownUser.getUserName(), ownUser.getUserEmail(), ownUser.getUserPhone());
     }
 
 }

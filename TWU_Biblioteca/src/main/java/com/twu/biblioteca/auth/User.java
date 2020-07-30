@@ -1,6 +1,5 @@
 package com.twu.biblioteca.auth;
 
-import java.util.Objects;
 
 public class User {
     private String userId;

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86000b8b-6bd4-4241-93e1-4969129374e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/Authenticator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/AuthenticatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/TestAuthenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/auth/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/console/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/twu/biblioteca/console/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/console/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/twu/biblioteca/console/Console.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +51,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.TestAuthenticatorTest.should_get_the_user_info_from_the_loginInfo">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca" />
@@ -133,9 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.TestAuthenticatorTest.should_get_the_user_info_from_the_loginInfo" />
         <item itemvalue="JUnit.TestAuthenticatorTest.should_throw_the_ErrorValidationException_when_not_check_the_LoginInfo" />
-        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.TestLibraryMoviesTest" />
         <item itemvalue="JUnit.TestLibraryMoviesTest.should_get_the_movie_when_user_input_the_existing_movie" />
       </list>
@@ -183,22 +180,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="375" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595584644854" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1596142844451">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1596143253643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1596142844451">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596143253643" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1596143253643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1596142844451">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596143253643" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1596143253643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1596142844451">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596143253643" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1596143253643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596142844451" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596143253643" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1595755450541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
