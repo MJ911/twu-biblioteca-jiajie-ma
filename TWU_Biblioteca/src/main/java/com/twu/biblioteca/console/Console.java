@@ -19,13 +19,13 @@ public class Console {
     private final PrintStream printer = System.out;
     private final Scanner scanner = new Scanner(System.in);
     private Library<Book> libraryBooks;
-    private Library<Movie> libraryMoviess;
+    private Library<Movie> libraryMovies;
     private Authenticator authenticator;
     private User user;
 
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
-        this.libraryMoviess = libraryMoviess;
+        this.libraryMovies = libraryMoviess;
         authenticator = new AuthenticatorTest(DataProvidedApp.provideUsers());
     }
 
@@ -71,13 +71,13 @@ public class Console {
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s |  %-20s | %-20s\n";
         printer.println("Listing all the movies message in Biblioteca:");
         printer.printf(ENTRY_FORMAT, "-MovieNo-", "-MovieName-", "-MovieReleaseYear-", "-MovieDirector-", "-MovieRating-");
-        libraryMoviess.getAllItems().stream().filter(Item::isIn).forEach(movie -> printer.printf(ENTRY_FORMAT,
+        libraryMovies.getAllItems().stream().filter(Item::isIn).forEach(movie -> printer.printf(ENTRY_FORMAT,
                 movie.getItemNo(), movie.getMovieName(), movie.getMovieReleaseYear(), movie.getMovieDirector(), movie.getMovieRating()));
     }
 
     public void checkMovie() {
         String movieNo = inputWithInfo("Please Choose the MovieNo and Input it:");
-        Optional<Movie> checkMovie = libraryMoviess.getItemInfoByItemNo(movieNo);
+        Optional<Movie> checkMovie = libraryMovies.getItemInfoByItemNo(movieNo);
         if(checkMovie.isPresent()) {
             printer.println("Thank you!Enjoy the movie");
         } else {
@@ -140,7 +140,8 @@ public class Console {
             try {
                 String userNo = inputWithInfo("Please input your card ID:");
                 String userPassword = inputWithInfo("Please input your card PASSWORD:");
-                authenticator.authenticatorLogin(new User(userNo, userPassword));
+                user = new User(userNo, userPassword);
+                authenticator.authenticatorLogin(user);
                 break;
             } catch (ErrorValidationException e) {
                 printer.println("Please input the correct ID or PASSWORD!");
