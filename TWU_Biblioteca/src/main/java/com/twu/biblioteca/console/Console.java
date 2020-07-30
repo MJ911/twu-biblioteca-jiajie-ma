@@ -19,13 +19,13 @@ public class Console {
     private Library<Movie> libraryMovies;
     private Authenticator authenticator;
     private LoginInfo loginInfo;
-    private UserInfo userInfo;
+    private UserInfo userInfos;
 
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
         this.libraryMovies = libraryMoviess;
         this.authenticator = new AuthenticatorTest(DataProvidedApp.provideUsers());
-        this.userInfo = new UserInfo();
+        this.userInfos = new UserInfo();
     }
 
     public void start() {
@@ -51,7 +51,7 @@ public class Console {
         Optional<Book> checkBook = libraryBooks.getItemInfoByItemNo(bookNo);
         if(checkBook.isPresent()) {
             printer.println("Thank you!Enjoy the book");
-            userInfo.getUserItemInfoMap().put(loginInfo, checkBook.get());
+            userInfos.getUserItemInfoMap().put(loginInfo, checkBook.get());
         } else {
             printer.println("Sorry,that book is not available");
         }
@@ -80,7 +80,7 @@ public class Console {
         Optional<Movie> checkMovie = libraryMovies.getItemInfoByItemNo(movieNo);
         if(checkMovie.isPresent()) {
             printer.println("Thank you!Enjoy the movie");
-            userInfo.getUserItemInfoMap().put(loginInfo, checkMovie.get());
+            userInfos.getUserItemInfoMap().put(loginInfo, checkMovie.get());
         } else {
             printer.println("Sorry,that movie is not available");
         }
@@ -160,7 +160,7 @@ public class Console {
             return;
         }
         printer.println("Listing all the checked out message in Biblioteca:");
-        userInfo.getUserItemInfoMap().forEach((loginInfo, item) -> printer.println(loginInfo.toString()+item.toString()));
+        userInfos.getUserItemInfoMap().forEach((loginInfo, item) -> printer.println(loginInfo.toString()+item.toString()));
     }
 
 }

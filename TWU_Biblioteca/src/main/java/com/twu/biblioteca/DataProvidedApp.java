@@ -29,10 +29,10 @@ public final class DataProvidedApp {
         ));
     }
 
-    public static List<LoginInfo> provideUsers() {
+    public static List<User> provideUsers() {
         return Arrays.asList(
-                new LoginInfo("123456", "123456"),
-                new LoginInfo("123456789", "123456789"),
-                new LoginInfo("admin", "123456"));
+                new User("123456", "123456", "UserA", "123456@thoughtworks.com", "12345677714"),
+                new User("123456789", "123456789", "UserB", "456789@thoughtworks.com", "12345689714"),
+                new User("admin", "123456", "UserC", "321789@thoughtworks.com", "11255677714"));
     }
 }
