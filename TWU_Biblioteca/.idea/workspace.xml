@@ -95,7 +95,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLibraryBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -104,13 +104,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.libraryTest" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.libraryTest.TestLibraryTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.libraryTest.TestLibraryBooksTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLibraryTest.should_return_the_book_when_the_book_is_exist_and_is_not_in_library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLibraryBooksTest.should_return_the_book_when_the_book_is_exist_and_is_not_in_library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TWU_Biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -119,7 +119,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca.libraryTest" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.libraryTest.TestLibraryTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.libraryTest.TestLibraryBooksTest" />
       <option name="METHOD_NAME" value="should_return_the_book_when_the_book_is_exist_and_is_not_in_library" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -129,8 +129,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.TestLibraryTest" />
-        <item itemvalue="JUnit.TestLibraryTest.should_return_the_book_when_the_book_is_exist_and_is_not_in_library" />
+        <item itemvalue="JUnit.TestLibraryBooksTest" />
+        <item itemvalue="JUnit.TestLibraryBooksTest.should_return_the_book_when_the_book_is_exist_and_is_not_in_library" />
         <item itemvalue="JUnit.ConsoleTest.should_print_welcome_message_when_console_is_start" />
         <item itemvalue="JUnit.ConsoleTest" />
       </list>

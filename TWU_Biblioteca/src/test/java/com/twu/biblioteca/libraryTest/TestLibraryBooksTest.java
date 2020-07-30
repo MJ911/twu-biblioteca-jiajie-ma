@@ -10,7 +10,7 @@ import java.util.Optional;
 
 import static org.junit.Assert.*;
 
-public class TestLibraryTest {
+public class TestLibraryBooksTest {
     TestLibraryBooks testLibrary;
 
     @Test
