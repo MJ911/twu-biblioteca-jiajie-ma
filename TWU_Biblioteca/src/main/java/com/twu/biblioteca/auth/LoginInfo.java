@@ -2,14 +2,11 @@ package com.twu.biblioteca.auth;
 
 import java.util.Objects;
 
-public class User {
+public class LoginInfo {
     private String userId;
     private String userPassword;
-    private String userName;
-    private String userEmail;
-    private String userPhone;
 
-    public User(String userId, String userPassword) {
+    public LoginInfo(String userId, String userPassword) {
         this.userId = userId;
         this.userPassword = userPassword;
     }
@@ -33,10 +30,10 @@ public class User {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof User)) return false;
-        User user = (User) o;
-        return Objects.equals(getUserId(), user.getUserId()) &&
-                Objects.equals(getUserPassword(), user.getUserPassword());
+        if (!(o instanceof LoginInfo)) return false;
+        LoginInfo loginInfo = (LoginInfo) o;
+        return Objects.equals(getUserId(), loginInfo.getUserId()) &&
+                Objects.equals(getUserPassword(), loginInfo.getUserPassword());
     }
 
     @Override
