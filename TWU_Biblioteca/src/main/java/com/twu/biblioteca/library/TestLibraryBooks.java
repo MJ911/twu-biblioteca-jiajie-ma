@@ -17,7 +17,7 @@ public final class TestLibraryBooks implements Library<Book> {
     }
 
     @Override
-    public Optional<Book> getBookInfoByItemNo(String bookNo) {
+    public Optional<Book> getItemInfoByItemNo(String bookNo) {
         Optional<Book> checkBook = books.stream().filter(Book::isIn).filter(book -> bookNo.equals(book.getItemNo())).findFirst();
         checkBook.ifPresent(book -> book.setIn(false));
 

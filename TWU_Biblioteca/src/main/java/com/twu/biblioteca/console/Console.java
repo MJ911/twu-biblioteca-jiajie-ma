@@ -37,7 +37,7 @@ public class Console {
 
     public void checkBook() {
         String bookNo = inputWithInfo("Please Choose the BookNo and Input it:");
-        Optional<Book> checkBook = libraryBooks.getBookInfoByItemNo(bookNo);
+        Optional<Book> checkBook = libraryBooks.getItemInfoByItemNo(bookNo);
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
         if(checkBook.isPresent()) {
             printer.println("Thank you!Enjoy the book");

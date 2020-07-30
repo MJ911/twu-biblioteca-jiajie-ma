@@ -1,12 +1,12 @@
 package com.twu.biblioteca.library;
 
-public class movie extends item {
+public class Movie extends item {
     private String movieName;
     private String movieReleaseYear;
     private String movieDirector;
     private String movieRating;
 
-    public movie(String movieNo, String movieName, String movieReleaseYear, String movieDirector, String movieRating, boolean isIn) {
+    public Movie(String movieNo, String movieName, String movieReleaseYear, String movieDirector, String movieRating, boolean isIn) {
         super(movieNo, isIn);
         this.movieName = movieName;
         this.movieReleaseYear = movieReleaseYear;

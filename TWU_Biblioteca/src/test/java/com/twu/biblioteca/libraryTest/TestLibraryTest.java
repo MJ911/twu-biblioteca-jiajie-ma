@@ -22,7 +22,7 @@ public class TestLibraryTest {
 
         testLibrary = new TestLibraryBooks(books);
 
-        Optional<Book> exceptedBook = testLibrary.getBookInfoByItemNo("1");
+        Optional<Book> exceptedBook = testLibrary.getItemInfoByItemNo("1");
 
         exceptedBook.ifPresent(book -> assertEquals("1" ,book.getItemNo()));
         exceptedBook.ifPresent(book -> assertEquals("Dimtree" ,book.getAuthor()));
