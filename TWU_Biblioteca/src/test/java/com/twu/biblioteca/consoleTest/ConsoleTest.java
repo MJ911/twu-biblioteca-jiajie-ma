@@ -12,7 +12,7 @@ public class ConsoleTest {
 
     @Before
     public void setUp() {
-        console = spy(new Console(DataProvidedApp.provideBookLibrary()));
+        console = spy(new Console(DataProvidedApp.provideBookLibrary(), DataProvidedApp.provideMovieLibrary()));
     }
 
     @Test

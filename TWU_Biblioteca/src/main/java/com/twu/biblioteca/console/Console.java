@@ -3,6 +3,7 @@ package com.twu.biblioteca.console;
 import com.twu.biblioteca.BibliotecaUtil;
 import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Library;
+import com.twu.biblioteca.library.Movie;
 import com.twu.biblioteca.library.item;
 
 import java.io.PrintStream;
@@ -13,9 +14,11 @@ public class Console {
     private final PrintStream printer = System.out;
     private final Scanner scanner = new Scanner(System.in);
     private Library<Book> libraryBooks;
+    private Library<Movie> libraryMoviess;
 
-    public Console(Library<Book> libraryBooks) {
+    public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
+        this.libraryMoviess = libraryMoviess;
     }
 
     public void start() {
@@ -57,7 +60,11 @@ public class Console {
     }
 
     public void listMovies() {
-
+        final String ENTRY_FORMAT = "%-16s | %-20s | %-20s |  %-20s | %-20s\n";
+        printer.println("Listing all the movies message in Biblioteca:");
+        printer.printf(ENTRY_FORMAT, "-MovieNo-", "-MovieName-", "-MovieReleaseYear-", "-MovieDirector-", "-MovieRating-");
+        libraryMoviess.getAllItems().stream().filter(item::isIn).forEach(movie -> printer.printf(ENTRY_FORMAT,
+                movie.getItemNo(), movie.getMovieName(), movie.getMovieReleaseYear(), movie.getMovieDirector(), movie.getMovieRating()));
     }
 
     public void main() {
