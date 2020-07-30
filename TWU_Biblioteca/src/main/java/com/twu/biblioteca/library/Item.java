@@ -1,10 +1,10 @@
 package com.twu.biblioteca.library;
 
-public abstract class item {
+public abstract class Item {
     protected String itemNo;
     protected boolean isIn;
 
-    public item(String content, boolean isIn) {
+    public Item(String content, boolean isIn) {
         this.itemNo = content;
         this.isIn = isIn;
     }

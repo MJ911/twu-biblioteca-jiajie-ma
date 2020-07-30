@@ -1,6 +1,6 @@
 package com.twu.biblioteca.library;
 
-public class Book extends item{
+public class Book extends Item {
     private String author;
     private int publishYear;
 

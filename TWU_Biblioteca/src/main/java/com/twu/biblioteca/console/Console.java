@@ -1,10 +1,14 @@
 package com.twu.biblioteca.console;
 
 import com.twu.biblioteca.BibliotecaUtil;
+import com.twu.biblioteca.auth.Authenticator;
+import com.twu.biblioteca.auth.AuthenticatorTest;
+import com.twu.biblioteca.auth.ErrorValidationException;
+import com.twu.biblioteca.auth.User;
 import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Library;
 import com.twu.biblioteca.library.Movie;
-import com.twu.biblioteca.library.item;
+import com.twu.biblioteca.library.Item;
 
 import java.io.PrintStream;
 import java.util.Optional;
@@ -15,14 +19,18 @@ public class Console {
     private final Scanner scanner = new Scanner(System.in);
     private Library<Book> libraryBooks;
     private Library<Movie> libraryMoviess;
+    private Authenticator authenticator;
+    private User user;
 
     public Console(Library<Book> libraryBooks, Library<Movie> libraryMoviess) {
         this.libraryBooks = libraryBooks;
         this.libraryMoviess = libraryMoviess;
+        authenticator = new AuthenticatorTest();
     }
 
     public void start() {
         this.welcome();
+        this.login();
         this.main();
     }
 
@@ -34,7 +42,7 @@ public class Console {
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
         printer.println("Listing all the books message in Biblioteca:");
         printer.printf(ENTRY_FORMAT, "-BookNo-","-AUTHOR-", "-PUBLISH YEAR-");
-        libraryBooks.getAllItems().stream().filter(item::isIn).forEach(book -> printer.printf(ENTRY_FORMAT, book.getItemNo(),book.getAuthor(), book.getPublishYear()));
+        libraryBooks.getAllItems().stream().filter(Item::isIn).forEach(book -> printer.printf(ENTRY_FORMAT, book.getItemNo(),book.getAuthor(), book.getPublishYear()));
     }
 
 
@@ -62,7 +70,7 @@ public class Console {
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s |  %-20s | %-20s\n";
         printer.println("Listing all the movies message in Biblioteca:");
         printer.printf(ENTRY_FORMAT, "-MovieNo-", "-MovieName-", "-MovieReleaseYear-", "-MovieDirector-", "-MovieRating-");
-        libraryMoviess.getAllItems().stream().filter(item::isIn).forEach(movie -> printer.printf(ENTRY_FORMAT,
+        libraryMoviess.getAllItems().stream().filter(Item::isIn).forEach(movie -> printer.printf(ENTRY_FORMAT,
                 movie.getItemNo(), movie.getMovieName(), movie.getMovieReleaseYear(), movie.getMovieDirector(), movie.getMovieRating()));
     }
 
@@ -125,4 +133,18 @@ public class Console {
     public void exit() {
         printer.println("Thanks your usage!");
     }
+
+    public void login() {
+        while (true) {
+            try {
+                String userNo = inputWithInfo("Please input your card ID:");
+                String userPassword = inputWithInfo("Please input your card PASSWORD:");
+                authenticator.authenticatorLogin(new User(userNo, userPassword));
+                break;
+            } catch (ErrorValidationException e) {
+                printer.println("Please input the correct ID or PASSWORD!");
+            }
+        }
+    }
+
 }

@@ -20,9 +20,9 @@ public final class DataProvidedApp {
 
     public static TestLibraryMovies provideMovieLibrary() {
         return new TestLibraryMovies(Arrays.asList(
-                new Movie("1","X MAN", "2001", "Eric", "7", true),
-                new Movie("2","X MAN 2", "2004", "Eric & Nick", "9", true),
-                new Movie("3","X MAN 3", "2010", "Nick", "10", true)
+                new Movie("1","X MAN", 2001, "Eric", "7", true),
+                new Movie("2","X MAN 2", 2004, "Eric & Nick", "9", true),
+                new Movie("3","X MAN 3", 2010, "Nick", "10", true)
         ));
     }
 }
