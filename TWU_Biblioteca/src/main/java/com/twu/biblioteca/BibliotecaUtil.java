@@ -13,6 +13,7 @@ public final class BibliotecaUtil {
                 new Option("1", "List of Books"),
                 new Option("2", "Return Book"),
                 new Option("3", "List of Movies"),
+                new Option("4", "Choose a Movie"),
                 new Option("Q", "exit the Application"));
     }
 }
