@@ -12,6 +12,7 @@ public final class BibliotecaUtil {
         return Arrays.asList(
                 new Option("1", "List of Books"),
                 new Option("2", "Return Book"),
+                new Option("3", "List of Movies"),
                 new Option("Q", "exit the Application"));
     }
 }
