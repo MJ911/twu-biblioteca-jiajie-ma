@@ -67,7 +67,13 @@ public class Console {
     }
 
     public void checkMovie() {
-        
+        String movieNo = inputWithInfo("Please Choose the MovieNo and Input it:");
+        Optional<Movie> checkMovie = libraryMoviess.getItemInfoByItemNo(movieNo);
+        if(checkMovie.isPresent()) {
+            printer.println("Thank you!Enjoy the movie");
+        } else {
+            printer.println("Sorry,that movie is not available");
+        }
     }
 
     public void main() {

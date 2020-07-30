@@ -51,7 +51,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="JUnit.TestLibraryMoviesTest">
+  <component name="RunManager" selected="Application.BibliotecaApp">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="TWU_Biblioteca" />
@@ -129,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.TestLibraryMoviesTest" />
         <item itemvalue="JUnit.TestLibraryMoviesTest.should_get_the_movie_when_user_input_the_existing_movie" />
-        <item itemvalue="Application.BibliotecaApp" />
         <item itemvalue="JUnit.TestLibraryBooksTest" />
         <item itemvalue="JUnit.TestLibraryBooksTest.should_return_the_book_when_the_book_is_exist_and_is_not_in_library" />
       </list>
@@ -179,22 +179,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="375" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595584644854" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1596134530504">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1596134675565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596134530504" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1596134530503">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596134675565" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1596134675565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596134530503" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1596134530503">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596134675565" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1596134675565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596134530503" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1596134530503">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596134675565" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1596134675565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596134530503" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596134675565" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1595755450541">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

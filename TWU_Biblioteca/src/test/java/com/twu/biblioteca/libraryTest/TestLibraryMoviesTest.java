@@ -1,8 +1,6 @@
 package com.twu.biblioteca.libraryTest;
 
-import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Movie;
-import com.twu.biblioteca.library.TestLibraryBooks;
 import com.twu.biblioteca.library.TestLibraryMovies;
 import org.junit.Test;
 
