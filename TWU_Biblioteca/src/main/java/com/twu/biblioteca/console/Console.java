@@ -67,6 +67,10 @@ public class Console {
                 movie.getItemNo(), movie.getMovieName(), movie.getMovieReleaseYear(), movie.getMovieDirector(), movie.getMovieRating()));
     }
 
+    public void checkMovie() {
+
+    }
+
     public void main() {
         this.listOptios();
         this.runOption();
@@ -98,6 +102,10 @@ public class Console {
             }
             if(Integer.parseInt(optionNo) == 3) {
                 listMovies();
+                continue;
+            }
+            if(Integer.parseInt(optionNo) == 4) {
+                checkMovie();
                 continue;
             }
             printer.println("Please select a valid option!");
