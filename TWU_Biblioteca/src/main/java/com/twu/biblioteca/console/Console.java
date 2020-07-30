@@ -3,6 +3,7 @@ package com.twu.biblioteca.console;
 import com.twu.biblioteca.BibliotecaUtil;
 import com.twu.biblioteca.library.Book;
 import com.twu.biblioteca.library.Library;
+import com.twu.biblioteca.library.item;
 
 import java.io.PrintStream;
 import java.util.Optional;
@@ -11,11 +12,10 @@ import java.util.Scanner;
 public class Console {
     private final PrintStream printer = System.out;
     private final Scanner scanner = new Scanner(System.in);
-    private Library libraryBooks;
-    private Menu bibliotecaMenu;
+    private Library<Book> libraryItems;
 
-    public Console(Library libraryBooks) {
-        this.libraryBooks = libraryBooks;
+    public Console(Library<Book> libraryBooks) {
+        this.libraryItems = libraryBooks;
     }
 
     public void start() {
@@ -31,13 +31,13 @@ public class Console {
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
         printer.println("Listing all the books message in Biblioteca:");
         printer.printf(ENTRY_FORMAT, "-BookNo-","-AUTHOR-", "-PUBLISH YEAR-");
-        libraryBooks.getAllBooks().stream().filter(Book::isIn).forEach(book -> printer.printf(ENTRY_FORMAT, book.getBookNo(),book.getAuthor(), book.getPublishYear()));
+        libraryItems.getAllItems().stream().filter(item::isIn).forEach(book -> printer.printf(ENTRY_FORMAT, book.getItemNo(),book.getAuthor(), book.getPublishYear()));
     }
 
 
     public void checkBook() {
         String bookNo = inputWithInfo("Please Choose the BookNo and Input it:");
-        Optional<Book> checkBook = libraryBooks.getBookInfoByBookNo(bookNo);
+        Optional<Book> checkBook = libraryItems.getBookInfoByItemNo(bookNo);
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
         if(checkBook.isPresent()) {
             printer.println("Thank you!Enjoy the book");
@@ -48,7 +48,7 @@ public class Console {
 
     public void returnBook() {
         String bookNo = inputWithInfo("Please Return the BookNo and Input it:");
-        boolean isReturn = libraryBooks.returnBook(bookNo);
+        boolean isReturn = libraryItems.returnItemByItemNo(bookNo);
         if(isReturn) {
             printer.println("Thank you for returning the book!");
             return;
@@ -62,7 +62,7 @@ public class Console {
     }
 
     public void listOptios(){
-        bibliotecaMenu = new Menu(BibliotecaUtil.getAllOptions());
+        Menu bibliotecaMenu = new Menu(BibliotecaUtil.getAllOptions());
         final String ENTRY_FORMAT = "%-16s | %16s\n";
         printer.println("Listing of Biblioteca menu:");
         printer.printf(ENTRY_FORMAT, "-OptionNo-", "-Description-");

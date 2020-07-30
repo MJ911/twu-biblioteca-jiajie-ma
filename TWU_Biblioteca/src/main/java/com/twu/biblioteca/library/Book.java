@@ -1,24 +1,13 @@
 package com.twu.biblioteca.library;
 
-public class Book {
-    private String bookNo;
+public class Book extends item{
     private String author;
     private int publishYear;
-    private boolean isIn;
 
     public Book(String bookNo, String author, int publishYear, boolean isIn) {
-        this.bookNo = bookNo;
+        super(bookNo, isIn);
         this.author = author;
         this.publishYear = publishYear;
-        this.isIn = isIn;
-    }
-
-    public String getBookNo() {
-        return bookNo;
-    }
-
-    public void setBookNo(String bookNo) {
-        this.bookNo = bookNo;
     }
 
     public String getAuthor() {
@@ -37,17 +26,9 @@ public class Book {
         this.publishYear = publishYear;
     }
 
-    public boolean isIn() {
-        return isIn;
-    }
-
-    public void setIn(boolean in) {
-        isIn = in;
-    }
-
     @Override
     public String toString() {
         final String ENTRY_FORMAT = "%-16s | %-20s | %-20s\n";
-        return String.format(ENTRY_FORMAT, getBookNo(), getAuthor(), getPublishYear());
+        return String.format(ENTRY_FORMAT, getItemNo(), getAuthor(), getPublishYear());
     }
 }

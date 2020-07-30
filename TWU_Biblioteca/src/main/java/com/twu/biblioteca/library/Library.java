@@ -3,10 +3,10 @@ package com.twu.biblioteca.library;
 import java.util.List;
 import java.util.Optional;
 
-public interface Library {
-    List<Book> getAllBooks();
+public interface Library<C extends item> {
+    List<C> getAllItems();
 
-    Optional<Book> getBookInfoByBookNo(String info);
+    Optional<C> getBookInfoByItemNo(String itemNo);
 
-    boolean returnBook(String info);
+    boolean returnItemByItemNo(String itemNo);
 }
