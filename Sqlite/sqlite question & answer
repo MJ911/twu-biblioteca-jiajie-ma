@@ -23,3 +23,7 @@ Use your query from question 1 to verify that you have checked it out.
 Also, provide the SQL used to update the database.
 Answer：
 	Jiajie Ma
+	
+5.Who has checked out more than 1 item? 
+	Anand Beck	3
+	Frank Smith	3
