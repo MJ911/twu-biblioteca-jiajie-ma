@@ -88,7 +88,6 @@ public class Console {
     }
 
     public void main() {
-        this.listOptios();
         this.runOption();
     }
 
@@ -102,6 +101,7 @@ public class Console {
 
     public void runOption(){
         while(true) {
+            listOptios();
             String optionNo = inputWithInfo("Please Choose the OptionNo and Input it:");
             if("Q".equals(optionNo)) {
                 exit();
