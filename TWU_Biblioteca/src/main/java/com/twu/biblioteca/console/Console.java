@@ -11,6 +11,7 @@ import com.twu.biblioteca.library.Item;
 import java.io.PrintStream;
 import java.util.Optional;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class Console {
     private final PrintStream printer = System.out;
@@ -106,33 +107,45 @@ public class Console {
                 exit();
                 break;
             }
-            if(Integer.parseInt(optionNo) == 1) {
+            if(!isNumeric(optionNo) || Integer.parseInt(optionNo) < 1 || Integer.parseInt(optionNo) > 6) {
+                errorOption();
+                continue;
+            }
+            int optionNumber = Integer.parseInt(optionNo);
+            if(optionNumber == 1) {
                 listBooks();
                 checkBook();
                 continue;
             }
-            if(Integer.parseInt(optionNo) == 2) {
+            if(optionNumber == 2) {
                 returnBook();
                 continue;
             }
-            if(Integer.parseInt(optionNo) == 3) {
+            if(optionNumber == 3) {
                 listMovies();
                 continue;
             }
-            if(Integer.parseInt(optionNo) == 4) {
+            if(optionNumber == 4) {
                 checkMovie();
                 continue;
             }
-            if(Integer.parseInt(optionNo) == 5) {
+            if(optionNumber == 5) {
                 listUserInfo();
                 continue;
             }
-            if(Integer.parseInt(optionNo) == 6) {
+            if(optionNumber == 6) {
                 viewOwnInfo();
-                continue;
             }
-            printer.println("Please select a valid option!");
         }
+    }
+
+    private boolean isNumeric(String str) {
+        Pattern pattern = Pattern.compile("[0-9]*");
+        return pattern.matcher(str).matches();
+    }
+
+    public void errorOption() {
+        printer.println("Please select a valid option!");
     }
 
     public String inputWithInfo(String info) {
